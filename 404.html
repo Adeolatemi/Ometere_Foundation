@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading Ometere Hope Alive Foundation</title>
+    <script>
+      const requestedPath = `${window.location.pathname}${window.location.search}${window.location.hash}`
+      const projectName = window.location.pathname.split('/').filter(Boolean)[0]
+      const appRoot = projectName ? `/${projectName}/` : '/'
+      sessionStorage.setItem('ometere-pages-redirect', requestedPath)
+      window.location.replace(appRoot)
+    </script>
+  </head>
+  <body>
+    <p>Loading Ometere Hope Alive Foundation…</p>
+  </body>
+</html>
